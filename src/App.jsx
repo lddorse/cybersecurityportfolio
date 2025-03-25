@@ -24,9 +24,9 @@ function App() {
             <div className="bg-white w-full max-w-3xl rounded-xl shadow-xl p-8">
               <Hero />
               <Skills />
+              <Projects />
               <CredentialsSection />
               <ContactSection />
-              <Projects />
             </div>
           </div>
         } />
