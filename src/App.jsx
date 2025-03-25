@@ -12,6 +12,14 @@ import CredentialsSection from './components/CredentialsSection';
 import ContactSection from './components/ContactSection';
 import Navbar from "./components/Navbar";
 import ScrollToTop from './components/ScrollToTop';
+import ProjectCategories from './components/ProjectsCategories';
+import VulnAssessmentProjects from './pages/VulnAssessmentProjects';
+import RiskPolicyProjects from './pages/RiskPolicyProjects';
+import PhishingAwarenessProjects from './pages/PhishingAwarenessProjects';
+import RedBlueLabsProjects from './pages/RedBlueLabsProjects';
+import RedBlueProject from './pages/RedBlueProject';
+import SecurityControlProjects from './pages/SecurityControlProjects';
+
 
 function App() {
   return (
@@ -24,18 +32,26 @@ function App() {
             <div className="bg-white w-full max-w-3xl rounded-xl shadow-xl p-8">
               <Hero />
               <Skills />
-              <Projects />
+              <ProjectCategories />
               <CredentialsSection />
               <ContactSection />
             </div>
           </div>
-        } />
+        } />   
+        <Route path="/projects/security-controls" element={<SecurityControlProjects />} />   
+        <Route path="/projects/red-blue-labs" element={<RedBlueLabsProjects />} />  
+        <Route path="/projects/phishing-awareness" element={<PhishingAwarenessProjects />} />
+        <Route path="/projects/risk-policy" element={<RiskPolicyProjects />} />
+        <Route path="/projects/vulnerability-assessments" element={<VulnAssessmentProjects />} />
+
         <Route path="/project/internal-vuln" element={<InternalVulnProject />} />
         <Route path="/project/risk-assessment" element={<RiskAssessment />} />
         <Route path="/project/phishing-simulation" element={<PhishingProject />} />
         <Route path="/project/security-policy" element={<SecurityPolicyProject />} />
         <Route path="/project/issue-resolution" element={<IssueResolutionProject />} />
         <Route path="/project/security-control" element={<SecurityControlProject />} />
+        <Route path="/project/red-blue" element={<RedBlueProject />} />
+
 
       </Routes>
     </Router>
