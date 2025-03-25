@@ -11,10 +11,12 @@ import SecurityControlProject from './pages/SecurityControlProject';
 import CredentialsSection from './components/CredentialsSection';
 import ContactSection from './components/ContactSection';
 import Navbar from "./components/Navbar";
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={
