@@ -33,7 +33,7 @@ const Navbar = () => {
           Leo D. Dorsey
         </Link>
 
-        {/* Hamburger Button */}
+        {/* Hamburger Button 
         <button
           className="md:hidden text-gray-800 focus:outline-none"
           onClick={() => setOpen(!open)}
@@ -61,6 +61,7 @@ const Navbar = () => {
             )}
           </svg>
         </button>
+        */}
 
         {/* Nav Links 
         <div
