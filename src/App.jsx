@@ -19,12 +19,13 @@ import PhishingAwarenessProjects from './pages/PhishingAwarenessProjects';
 import RedBlueLabsProjects from './pages/RedBlueLabsProjects';
 import RedBlueProject from './pages/RedBlueProject';
 import SecurityControlProjects from './pages/SecurityControlProjects';
-import MitreAttackProject from './pages/MitreAttacksProject';
+import MitreAttackProject from './pages/MitreAttackProject';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import './custom.css';
 import FixedCardLayout from './components/FixedCardLayout';
 import PortfolioPage from './pages/PortfolioPage';
+import PongGame from './pages/PongGame';
 
 
 
@@ -40,6 +41,7 @@ function App() {
             <FixedCardLayout>
                 <Hero />
                 <Skills />
+                <PongGame /> 
               </FixedCardLayout>
           </div>
         } />   
