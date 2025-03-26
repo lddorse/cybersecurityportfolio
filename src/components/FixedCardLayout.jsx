@@ -2,7 +2,7 @@ const FixedCardLayout = ({ children }) => {
   return (
     <div className="relative h-screen bg-gray-200">
       {/* Top Fade Overlay */}
-      <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-gray-200 to-transparent z-30 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-gray-200 to-transparent z-30 pointer-events-none" />
 
       {/* Fixed Card Container */}
       <div
