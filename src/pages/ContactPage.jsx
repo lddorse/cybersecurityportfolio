@@ -49,7 +49,7 @@ const ContactPage = () => {
   
           <div className="mt-8">
             <p className="mb-1 font-semibold">Email:</p>
-            <p className="mb-4 text-blue-600">leo@example.com</p>
+            <p className="mb-4 text-blue-600">leodamiandorsey@gmail.com</p>
   
             <p className="mb-1 font-semibold">LinkedIn:</p>
             <a
@@ -73,7 +73,7 @@ const ContactPage = () => {
   
             <p className="mt-4 mb-1 font-semibold">Download Résumé:</p>
             <a
-              href="/LeoDorsey_Cybersecurity_Resume.pdf"
+              href="/LeoDorsey_OnePage_Cybersecurity_Resume.pdf"
               className="text-blue-600 underline"
               download
             >
