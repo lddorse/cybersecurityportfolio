@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
+import FixedCardLayout from '../components/FixedCardLayout';
 
 const PhishingAwarenessProjects = () => {
   return (
-    <div className="min-h-screen bg-gray-200 pt-40 px-4 py-10 flex justify-center">
-      <div className="bg-white max-w-3xl w-full p-8 rounded-lg shadow-lg text-gray-800">
+    <FixedCardLayout>
         <h1 className="text-3xl font-bold mb-4">Phishing & User Awareness Projects</h1>
 
         <div className="bg-gray-100 rounded-lg p-6 shadow mt-6">
@@ -35,8 +35,7 @@ const PhishingAwarenessProjects = () => {
             View Project
           </Link>
         </div>
-      </div>
-    </div>
+        </FixedCardLayout>
   );
 };
 

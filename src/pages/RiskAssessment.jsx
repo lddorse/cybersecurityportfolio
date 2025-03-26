@@ -1,8 +1,7 @@
+import FixedCardLayout from '../components/FixedCardLayout';
 const RiskAssessmentProject = () => {
   return (
-    <div className="min-h-screen bg-gray-200 pt-40 px-4 py-10 flex justify-center">
-      <div className="bg-white max-w-3xl w-full p-8 rounded-lg shadow-lg text-gray-800">
-        <h1 className="text-3xl font-bold mb-4">Risk Assessment and Information Gathering</h1>
+    <FixedCardLayout>        <h1 className="text-3xl font-bold mb-4">Risk Assessment and Information Gathering</h1>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">Summary</h2>
         <p>
@@ -42,8 +41,7 @@ const RiskAssessmentProject = () => {
             </a>
           </li>
         </ul>
-      </div>
-    </div>
+        </FixedCardLayout>
   );
 };
 

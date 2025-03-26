@@ -19,6 +19,13 @@ import PhishingAwarenessProjects from './pages/PhishingAwarenessProjects';
 import RedBlueLabsProjects from './pages/RedBlueLabsProjects';
 import RedBlueProject from './pages/RedBlueProject';
 import SecurityControlProjects from './pages/SecurityControlProjects';
+import MitreAttackProject from './pages/MitreAttacksProject';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import './custom.css';
+import FixedCardLayout from './components/FixedCardLayout';
+import PortfolioPage from './pages/PortfolioPage';
+
 
 
 function App() {
@@ -28,21 +35,25 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={
-          <div className="min-h-screen bg-gray-200 pt-40 flex items-center justify-center px-4 py-10">
-            <div className="bg-white w-full max-w-3xl rounded-xl shadow-xl p-8">
-              <Hero />
-              <Skills />
-              <ProjectCategories />
-              <CredentialsSection />
-              <ContactSection />
-            </div>
+          <div className="relative h-screen bg-gray-200">
+            {/* Fixed A5 Card */}
+            <FixedCardLayout>
+                <Hero />
+                <Skills />
+                <ProjectCategories />
+              </FixedCardLayout>
           </div>
         } />   
+
         <Route path="/projects/security-controls" element={<SecurityControlProjects />} />   
         <Route path="/projects/red-blue-labs" element={<RedBlueLabsProjects />} />  
         <Route path="/projects/phishing-awareness" element={<PhishingAwarenessProjects />} />
         <Route path="/projects/risk-policy" element={<RiskPolicyProjects />} />
         <Route path="/projects/vulnerability-assessments" element={<VulnAssessmentProjects />} />
+        <Route path="/project/mitre-detection" element={<MitreAttackProject />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
 
         <Route path="/project/internal-vuln" element={<InternalVulnProject />} />
         <Route path="/project/risk-assessment" element={<RiskAssessment />} />
@@ -51,8 +62,6 @@ function App() {
         <Route path="/project/issue-resolution" element={<IssueResolutionProject />} />
         <Route path="/project/security-control" element={<SecurityControlProject />} />
         <Route path="/project/red-blue" element={<RedBlueProject />} />
-
-
       </Routes>
     </Router>
   );

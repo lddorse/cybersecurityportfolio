@@ -1,7 +1,9 @@
+import FixedCardLayout from "../components/FixedCardLayout";
+
 const InternalVulnProject = () => {
     return (
-      <div className="min-h-screen bg-gray-200 px-4 pt-40 py-10 flex justify-center">
-        <div className="bg-white max-w-3xl w-full p-8 rounded-lg shadow-lg text-gray-800">
+      <FixedCardLayout>
+  
           <h1 className="text-3xl font-bold mb-4">Internal Vulnerability Assessment Simulation</h1>
   
           <h2 className="text-xl font-semibold mt-6 mb-2">Summary</h2>
@@ -34,8 +36,8 @@ const InternalVulnProject = () => {
             <li><a href="/images/Nmap_Scan_Screenshot.png" target="_blank" className="text-blue-600 underline">Nmap Scan Output</a></li>
             <li><a href="/images/Remediation_Checklist.png" target="_blank" className="text-blue-600 underline">Remediation Checklist</a></li>
           </ul>
-        </div>
-      </div>
+  
+      </FixedCardLayout>
     );
   };
   
