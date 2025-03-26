@@ -20,9 +20,9 @@ const Navbar = () => {
       <nav className="hidden sm:block fixed z-50 top-[calc(50%-297px+10px)] left-[calc(50%-384px-64px)]">
         <ul className="flex flex-col gap-4 text-gray-800 text-sm font-medium">
           <li>{navLink('/', 'Home')}</li>
+          <li>{navLink('/portfolio', 'Portfolio')}</li>
           <li>{navLink('/about', 'About')}</li>
           <li>{navLink('/contact', 'Contact')}</li>
-          <li>{navLink('/portfolio', 'Portfolio')}</li>
         </ul>
       </nav>
 
@@ -30,9 +30,9 @@ const Navbar = () => {
       <nav className="sm:hidden fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
         <ul className="flex gap-6 text-gray-800 text-sm font-medium">
           <li>{navLink('/', 'Home')}</li>
+          <li>{navLink('/portfolio', 'Portfolio')}</li>
           <li>{navLink('/about', 'About')}</li>
           <li>{navLink('/contact', 'Contact')}</li>
-          <li>{navLink('/portfolio', 'Portfolio')}</li>
         </ul>
       </nav>
     </>
