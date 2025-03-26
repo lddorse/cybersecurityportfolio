@@ -13,7 +13,7 @@ const AboutPage = () => {
           <p className="mb-4">
             Before cybersecurity, I worked as a freelance audio engineer, ran an art gallery, and even dabbled in stained glass and
             street art. I’ve always been drawn to the blend of creativity and technology — and eventually, that pulled me into the world
-            of cybersecurity, where solving problems and protecting people feels like second nature.
+            of cybersecurity, where solving problems and protecting security assets feels like second nature.
           </p>
   
           <p className="mb-4">
