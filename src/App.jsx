@@ -42,7 +42,7 @@ function App() {
             <FixedCardLayout>
                 <Hero />
                 <Skills />
-                <WeatherCanvas />
+                {/* <WeatherCanvas /> */}
                 <PongGame /> 
               </FixedCardLayout>
           </div>
