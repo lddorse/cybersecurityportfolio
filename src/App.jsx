@@ -26,6 +26,7 @@ import './custom.css';
 import FixedCardLayout from './components/FixedCardLayout';
 import PortfolioPage from './pages/PortfolioPage';
 import PongGame from './pages/PongGame';
+import WeatherCanvas from './pages/WeatherCanvas';
 
 
 
@@ -41,6 +42,7 @@ function App() {
             <FixedCardLayout>
                 <Hero />
                 <Skills />
+                <WeatherCanvas />
                 <PongGame /> 
               </FixedCardLayout>
           </div>
