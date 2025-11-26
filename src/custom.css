@@ -1,0 +1,28 @@
+.red-underline {
+    position: relative;
+  }
+  
+  .red-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #dc2626; /* Tailwind red-600 */
+  }
+  .red-underline,
+.red-underline-hover:hover {
+  position: relative;
+}
+
+.red-underline::after,
+.red-underline-hover:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #dc2626; /* red-600 */
+}
