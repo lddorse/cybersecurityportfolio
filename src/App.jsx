@@ -30,6 +30,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
 import TicketProjectPage004 from './pages/Ticket004';
+import TicketPhishingMicrosoft from './pages/ticket-phishing-microsoft';
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
         <Route path="/project/red-blue" element={<RedBlueProject />} />
         <Route path="/project/ticket-mfa-challenge" element={<TicketProject />} />
         <Route path="/project/ticket-wifi-latency" element={<TicketProjectPage004/>} />
+        <Route path="/project/ticket-phishing-microsoft" element={<TicketPhishingMicrosoft/>} />
       </Routes>
     </Router>
   );

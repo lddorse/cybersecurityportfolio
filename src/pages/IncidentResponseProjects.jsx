@@ -15,7 +15,14 @@ const IncidentResponseProjects = () => {
       description: 'Diagnosed intermittent wireless performance issues affecting users during peak hours. Analyzed AP load, checked channel interference, and recommended configuration adjustments.',
       path: '/project/ticket-wifi-latency',
       skills: ['Network Troubleshooting', 'WiFi Analysis', 'Latency Diagnostics', 'Helpdesk Support']
-    }
+    },
+    {
+  title: 'Possible Phishing Email — “Verify Your Microsoft Account”',
+  description: 'Analyzed a suspicious email claiming Microsoft account verification. Performed header inspection, link analysis, and provided user education & remediation steps.',
+  path: '/project/ticket-phishing-microsoft',
+  skills: ['Phishing Analysis', 'Email Security', 'User Awareness', 'Threat Hunting']
+}
+
   ];
 
   return (
