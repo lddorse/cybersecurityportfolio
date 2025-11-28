@@ -13,24 +13,23 @@ const IncidentResponseProjects = () => {
     // Add more incident response projects here in the future
   ];
 
-  return (<FixedCardLayout> 
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
+  return (
+    <FixedCardLayout> 
       <div className="max-w-6xl mx-auto">
         <BackButton />
         
-        <h1 className="text-4xl font-bold mb-4">Helpdesk & Incident Response</h1>
-        <p className="text-gray-600 mb-8">
+        <h1 className="text-3xl font-bold mb-4">Helpdesk & Incident Response</h1>
+        <p className="mb-8">
           Real-world ticket simulations demonstrating triage, investigation, and incident handling skills.
         </p>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 mb-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 border hover:shadow-xl transition">
-              <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
+            <div key={index} className="bg-gray-100 rounded-lg p-6 shadow">
+              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-700 mb-4">{project.description}</p>
               
               <div className="mb-4">
-                <h4 className="text-sm font-semibold text-gray-600 mb-2">Skills Demonstrated:</h4>
                 <div className="flex flex-wrap gap-2">
                   {project.skills.map((skill, i) => (
                     <span key={i} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
@@ -50,21 +49,19 @@ const IncidentResponseProjects = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-6">
-          <h3 className="text-xl font-semibold mb-2">About This Section</h3>
-          <p className="text-gray-700">
-            These projects simulate real helpdesk and SOC tickets, demonstrating my ability to:
-          </p>
-          <ul className="mt-3 list-disc list-inside text-gray-700 space-y-1">
-            <li>Triage and prioritize security incidents</li>
-            <li>Perform systematic investigation and root cause analysis</li>
-            <li>Document findings and maintain clear communication</li>
-            <li>Identify lessons learned and recommend preventive measures</li>
-          </ul>
-        </div>
+        <h2 className="text-xl font-semibold mt-6 mb-2">About This Section</h2>
+        <p>
+          These projects simulate real helpdesk and SOC tickets, demonstrating my ability to:
+        </p>
+        <ul className="list-disc pl-6 mt-3">
+          <li>Triage and prioritize security incidents</li>
+          <li>Perform systematic investigation and root cause analysis</li>
+          <li>Document findings and maintain clear communication</li>
+          <li>Identify lessons learned and recommend preventive measures</li>
+        </ul>
       </div>
-    </div>
-  </FixedCardLayout> );
+    </FixedCardLayout>
+  );
 };
 
 export default IncidentResponseProjects;
