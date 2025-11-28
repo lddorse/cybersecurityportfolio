@@ -26,11 +26,16 @@ const ProjectCategories = () => {
       name: 'Security Control Engineering',
       path: '/projects/security-controls',
       description: 'Implementation and hardening of systems and networks.'
+    },
+    {
+      name: 'Helpdesk & Incident Response',
+      path: '/projects/incident-response',
+      description: 'Ticket triage, investigation, and incident handling.'
     }
   ];
 
   return (
-    <section className=" px-4 py-6">
+    <section className="px-4 py-6">
       <h2 className="text-3xl font-bold mb-8 text-center">Project Categories</h2>
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
         {categories.map((cat, index) => (

@@ -22,13 +22,13 @@ import SecurityControlProjects from './pages/SecurityControlProjects';
 import MitreAttackProject from './pages/MitreAttackProject';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import IncidentResponseProjects from './pages/IncidentResponseProjects';
+import TicketProject from './pages/TicketProject';
 import './custom.css';
 import FixedCardLayout from './components/FixedCardLayout';
 import PortfolioPage from './pages/PortfolioPage';
 import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
-
-
 
 function App() {
   return (
@@ -47,17 +47,16 @@ function App() {
               </FixedCardLayout>
           </div>
         } />   
-
         <Route path="/projects/security-controls" element={<SecurityControlProjects />} />   
         <Route path="/projects/red-blue-labs" element={<RedBlueLabsProjects />} />  
         <Route path="/projects/phishing-awareness" element={<PhishingAwarenessProjects />} />
         <Route path="/projects/risk-policy" element={<RiskPolicyProjects />} />
         <Route path="/projects/vulnerability-assessments" element={<VulnAssessmentProjects />} />
+        <Route path="/projects/incident-response" element={<IncidentResponseProjects />} />
         <Route path="/project/mitre-detection" element={<MitreAttackProject />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
-
         <Route path="/project/internal-vuln" element={<InternalVulnProject />} />
         <Route path="/project/risk-assessment" element={<RiskAssessment />} />
         <Route path="/project/phishing-simulation" element={<PhishingProject />} />
@@ -65,6 +64,7 @@ function App() {
         <Route path="/project/issue-resolution" element={<IssueResolutionProject />} />
         <Route path="/project/security-control" element={<SecurityControlProject />} />
         <Route path="/project/red-blue" element={<RedBlueProject />} />
+        <Route path="/project/ticket-mfa-challenge" element={<TicketProject />} />
       </Routes>
     </Router>
   );
