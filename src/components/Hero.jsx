@@ -1,14 +1,45 @@
 const Hero = () => {
-    return (
-      <section className="mb-10 text-center">
-                <h1 className="text-4xl font-bold mb-2">Leo D. Dorsey</h1>
-        <h2 className="text-xl text-gray-600 mb-4">Cybersecurity Technician</h2>
-        <p className="text-gray-700 mb-6">
-          I specialize in proactive cybersecurity strategies, risk assessment, phishing training, and security control implementation.
-        </p>
-      </section>
-    );
-  };
-  
-  export default Hero;
-  
+  return (
+    <section className="mb-10 text-center">
+      {/* Terminal prompt badge */}
+      <div className="inline-block mb-3 px-3 py-1 bg-slate-900 text-green-400 font-mono text-xs rounded border border-slate-700">
+        <span className="text-green-500">leo@security</span>
+        <span className="text-slate-400">:</span>
+        <span className="text-blue-400">~</span>
+        <span className="text-slate-400">$</span> whoami
+      </div>
+
+      <h1 className="text-4xl font-bold mb-2">Leo D. Dorsey</h1>
+      
+      <h2 className="text-xl mb-4">
+        <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent font-bold">
+          Cybersecurity
+        </span>{' '}
+        <span className="text-gray-600">Technician</span>
+      </h2>
+
+      <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+        I specialize in proactive cybersecurity strategies, risk assessment, 
+        phishing training, and security control implementation.
+      </p>
+
+      {/* Key focus areas */}
+      <div className="flex justify-center gap-2 flex-wrap text-sm">
+        <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded border border-blue-200 font-medium">
+          🔐 Security Controls
+        </span>
+        <span className="px-3 py-1 bg-green-50 text-green-700 rounded border border-green-200 font-medium">
+          🛡️ Risk Assessment
+        </span>
+        <span className="px-3 py-1 bg-purple-50 text-purple-700 rounded border border-purple-200 font-medium">
+          🔍 Threat Analysis
+        </span>
+        <span className="px-3 py-1 bg-red-50 text-red-700 rounded border border-red-200 font-medium">
+          📋 Compliance
+        </span>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
