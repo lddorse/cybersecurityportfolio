@@ -7,6 +7,7 @@ const PhishingAwarenessProjects = () => {
                         <BackButton />
 
         <h1 className="text-3xl font-bold mb-4">Phishing & User Awareness Projects</h1>
+        <div className="grid gap-6 md:grid-cols-2 mb-8">
 
         <div className="bg-gray-100 rounded-lg p-6 shadow mt-6">
           <h2 className="text-xl font-semibold mb-2">Phishing Simulation and User Awareness Training</h2>
@@ -36,6 +37,7 @@ const PhishingAwarenessProjects = () => {
           >
             View Project
           </Link>
+        </div>
         </div>
         </FixedCardLayout>
   );
