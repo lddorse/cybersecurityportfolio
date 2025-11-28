@@ -10,7 +10,12 @@ const IncidentResponseProjects = () => {
       path: '/project/ticket-mfa-challenge',
       skills: ['Incident Response', 'Log Analysis', 'MFA Security', 'Documentation']
     },
-    // Add more incident response projects here in the future
+    {
+      title: 'Slow WiFi / High Latency – East Wing',
+      description: 'Diagnosed intermittent wireless performance issues affecting users during peak hours. Analyzed AP load, checked channel interference, and recommended configuration adjustments.',
+      path: '/project/ticket-wifi-latency',
+      skills: ['Network Troubleshooting', 'WiFi Analysis', 'Latency Diagnostics', 'Helpdesk Support']
+    }
   ];
 
   return (
