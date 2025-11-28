@@ -1,4 +1,5 @@
 import React from "react";
+import FixedCardLayout from "../components/FixedCardLayout";
 import BackButton from '../components/BackButton';
 
 // TicketProjectPage.jsx
@@ -40,7 +41,7 @@ export default function TicketProjectPage() {
     ]
   };
 
-  return (
+  return (<FixedCardLayout>
     <div className="max-w-4xl mx-auto p-6">
         <BackButton />
       <header className="flex items-start justify-between">
@@ -169,5 +170,5 @@ export default function TicketProjectPage() {
         <div className="mt-1">Tip: replace placeholder attachments with real logs/screenshots and add a short write-up describing commands/queries used during triage.</div>
       </footer>
     </div>
-  );
+ </FixedCardLayout> );
 }
