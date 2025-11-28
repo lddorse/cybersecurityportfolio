@@ -1,9 +1,10 @@
 import FixedCardLayout from "../components/FixedCardLayout";
-
+import BackButton from "../components/BackButton";
 const InternalVulnProject = () => {
     return (
       <FixedCardLayout>
-  
+          <BackButton />
+
           <h1 className="text-3xl font-bold mb-4">Internal Vulnerability Assessment Simulation</h1>
   
           <h2 className="text-xl font-semibold mt-6 mb-2">Summary</h2>
