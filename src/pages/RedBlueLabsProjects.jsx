@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import FixedCardLayout from '../components/FixedCardLayout';
-
+import BackButton from '../components/BackButton';
 const RedBlueLabsProjects = () => {
   return (
-<FixedCardLayout>        <h1 className="text-3xl font-bold mb-4">Red Team / Blue Team Lab Projects</h1>
+<FixedCardLayout>                    <BackButton />
+      <h1 className="text-3xl font-bold mb-4">Red Team / Blue Team Lab Projects</h1>
 
         <div className="bg-gray-100 rounded-lg p-6 shadow mt-6">
           <h2 className="text-xl font-semibold mb-2">Red Team / Blue Team Simulation</h2>

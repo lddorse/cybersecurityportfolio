@@ -1,8 +1,9 @@
 import FixedCardLayout from "../components/FixedCardLayout";
-
+import BackButton from "../components/BackButton";
 const RedBlueProject = () => {
     return (
-<FixedCardLayout>          <h1 className="text-3xl font-bold mb-4">Red Team / Blue Team Simulation</h1>
+<FixedCardLayout>                     <BackButton />
+       <h1 className="text-3xl font-bold mb-4">Red Team / Blue Team Simulation</h1>
   
           <h2 className="text-xl font-semibold mt-6 mb-2">Summary</h2>
           <p>
