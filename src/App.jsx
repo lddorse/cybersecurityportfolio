@@ -67,7 +67,7 @@ function App() {
         <Route path="/project/red-blue" element={<RedBlueProject />} />
         <Route path="/project/ticket-mfa-challenge" element={<TicketProject />} />
         <Route path="/project/ticket-wifi-latency" element={<TicketProjectPage004/>} />
-<Route path="/project/ticket-phishing-microsoft" element={<TicketPhishingMicrosoft />} />   
+        <Route path="/project/ticket-phishing-microsoft" element={<TicketPhishingMicrosoft />} />   
    </Routes>
     </Router>
   );
