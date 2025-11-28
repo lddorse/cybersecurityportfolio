@@ -17,11 +17,11 @@ const IncidentResponseProjects = () => {
       skills: ['Network Troubleshooting', 'WiFi Analysis', 'Latency Diagnostics', 'Helpdesk Support']
     },
     {
-  title: 'Possible Phishing Email — “Verify Your Microsoft Account”',
-  description: 'Analyzed a suspicious email claiming Microsoft account verification. Performed header inspection, link analysis, and provided user education & remediation steps.',
-  path: '/project/ticket-phishing-microsoft',
-  skills: ['Phishing Analysis', 'Email Security', 'User Awareness', 'Threat Hunting']
-}
+      title: 'Possible Phishing Email — “Verify Your Microsoft Account”',
+      description: 'Analyzed a suspicious email claiming Microsoft account verification. Performed header inspection, link analysis, and provided user education & remediation steps.',
+      path: '/project/ticket-phishing-microsoft',
+      skills: ['Phishing Analysis', 'Email Security', 'User Awareness', 'Threat Hunting']
+    }
 
   ];
 
