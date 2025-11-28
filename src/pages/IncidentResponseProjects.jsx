@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import BackButton from '../components/BackButton';
+import FixedCardLayout from '../components/FixedCardLayout';
 
 const IncidentResponseProjects = () => {
   const projects = [
@@ -12,7 +13,7 @@ const IncidentResponseProjects = () => {
     // Add more incident response projects here in the future
   ];
 
-  return (
+  return (<FixedCardLayout> 
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <BackButton />
@@ -63,7 +64,7 @@ const IncidentResponseProjects = () => {
         </div>
       </div>
     </div>
-  );
+  </FixedCardLayout> );
 };
 
 export default IncidentResponseProjects;
