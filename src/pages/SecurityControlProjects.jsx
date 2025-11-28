@@ -5,6 +5,7 @@ const SecurityControlProjects = () => {
   return (
     <FixedCardLayout>                     <BackButton />
      <h1 className="text-3xl font-bold mb-4">Security Control Engineering Projects</h1>
+        <div className="grid gap-6 md:grid-cols-2 mb-8">
 
         <div className="bg-gray-100 rounded-lg p-6 shadow mt-6">
           <h2 className="text-xl font-semibold mb-2">Security Control Implementation</h2>
@@ -19,7 +20,7 @@ const SecurityControlProjects = () => {
           >
             View Project
           </Link>
-        </div>
+        </div></div>
         </FixedCardLayout>
   );
 };

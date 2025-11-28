@@ -5,7 +5,7 @@ const RiskPolicyProjects = () => {
   return (
     <FixedCardLayout>                     <BackButton />
      <h1 className="text-3xl font-bold mb-4">Risk & Policy Management Projects</h1>
-
+        <div className="grid gap-6 md:grid-cols-2 mb-8">
         <div className="bg-gray-100 rounded-lg p-6 shadow mt-6">
           <h2 className="text-xl font-semibold mb-2">Risk Assessment and Information Gathering</h2>
           <p className="text-gray-700 mb-4">
@@ -34,7 +34,7 @@ const RiskPolicyProjects = () => {
           >
             View Project
           </Link>
-        </div>
+        </div></div>
         </FixedCardLayout>
   );
 };
