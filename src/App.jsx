@@ -30,8 +30,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
 import TicketProjectPage004 from './pages/Ticket004';
-import TicketPhishingMicrosoft from './pages/ticket-phishing-microsoft';
-import TicketPhishingMicrosoft from './pages/ticket-phishing-microsoft';
+import TicketPhishingMicrosoft from './pages/TicketPhishingMicrosoft';
 
 function App() {
   return (
