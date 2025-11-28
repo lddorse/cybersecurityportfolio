@@ -31,6 +31,7 @@ import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
 import TicketProjectPage004 from './pages/Ticket004';
 import TicketPhishingMicrosoft from './pages/ticket-phishing-microsoft';
+import TicketPhishingMicrosoft from './pages/ticket-phishing-microsoft';
 
 function App() {
   return (
