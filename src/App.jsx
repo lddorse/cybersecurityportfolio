@@ -29,6 +29,7 @@ import FixedCardLayout from './components/FixedCardLayout';
 import PortfolioPage from './pages/PortfolioPage';
 import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
+import TicketProjectPage004 from './pages/Ticket004';
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
         <Route path="/project/security-control" element={<SecurityControlProject />} />
         <Route path="/project/red-blue" element={<RedBlueProject />} />
         <Route path="/project/ticket-mfa-challenge" element={<TicketProject />} />
+        <Route path="/project/ticket-wifi-latency" element={<TicketProjectPage004/>} />
       </Routes>
     </Router>
   );
