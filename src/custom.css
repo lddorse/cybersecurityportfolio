@@ -108,3 +108,102 @@
     background: #1e293b !important;
   }
 }
+/* Print styles for PDF export - ONE PAGE */
+@media print {
+  /* Force everything onto one page */
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  html, body {
+    height: auto;
+    overflow: visible;
+  }
+
+  /* Hide navigation and buttons */
+  nav,
+  .no-print,
+  button {
+    display: none !important;
+  }
+
+  /* Clean background for print */
+  body {
+    background: white !important;
+  }
+
+  /* Compact spacing */
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Remove shadows and adjust cards */
+  .bg-gray-100,
+  .bg-gray-200 {
+    background: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  .shadow {
+    box-shadow: none !important;
+  }
+
+  /* Prevent page breaks */
+  section,
+  .bg-gray-100,
+  article,
+  div {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Compact the hero */
+  section:first-of-type {
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Hide the pong game on print */
+  canvas,
+  [class*="pong"],
+  [class*="game"] {
+    display: none !important;
+  }
+
+  /* Show print-only elements */
+  .print\:block {
+    display: block !important;
+  }
+
+  /* Reduce overall font sizes for print */
+  body {
+    font-size: 10pt !important;
+  }
+
+  h1 {
+    font-size: 18pt !important;
+  }
+
+  h2 {
+    font-size: 14pt !important;
+  }
+
+  h3 {
+    font-size: 12pt !important;
+  }
+
+  /* Compact lists */
+  ul, ol {
+    margin: 0.25rem 0 !important;
+  }
+
+  li {
+    margin: 0.1rem 0 !important;
+  }
+}
