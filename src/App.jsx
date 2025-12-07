@@ -43,11 +43,7 @@ function App() {
           <div className="relative h-screen bg-gray-200">
             {/* Fixed A5 Card */}
             <FixedCardLayout>
-                <Hero />
-                <Skills />
-                <ResumeSection />
-                {/* <WeatherCanvas /> */}
-                <PongGame /> 
+                <ResumePage />
               </FixedCardLayout>
           </div>
         } />   

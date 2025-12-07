@@ -10,10 +10,10 @@ const ResumePage = () => {
       {/* Contact Info for Resume */}
       <div className="mb-8 text-center">
         <p className="text-gray-700">
-          📧 leodorsey@example.com • 📱 (555) 123-4567 • 📍 Danville, Illinois
+          📧 lddorse@gmail.com • 📱 (217) 530-1373 • 📍 Danville, Illinois
         </p>
         <p className="text-gray-600 text-sm mt-1">
-          🔗 leodorsey.com • 💼 linkedin.com/in/leodorsey • 💻 github.com/lddorse
+          🔗 leodorsey.com • 💼  • 💻 github.com/lddorse
         </p>
       </div>
 
