@@ -26,3 +26,85 @@
   height: 2px;
   background-color: #dc2626; /* red-600 */
 }
+/* Print styles for PDF export */
+@media print {
+  /* Hide navigation and non-essential elements */
+  nav,
+  .no-print,
+  button {
+    display: none !important;
+  }
+
+  /* Optimize layout for printing */
+  body {
+    background: white !important;
+  }
+
+  /* Ensure proper page breaks */
+  .bg-gray-100,
+  .bg-gray-200 {
+    background: white !important;
+    border: 1px solid #e5e7eb;
+  }
+
+  /* Better spacing for print */
+  section {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* Fix for card layout */
+  .shadow {
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb;
+  }
+}
+/* Print styles for PDF export */
+@media print {
+  /* Hide navigation and buttons */
+  nav,
+  .no-print,
+  button {
+    display: none !important;
+  }
+
+  /* Clean background for print */
+  body {
+    background: white !important;
+  }
+
+  /* Remove shadows and adjust cards */
+  .bg-gray-100,
+  .bg-gray-200 {
+    background: white !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  .shadow {
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  /* Prevent page breaks inside sections */
+  section,
+  .bg-gray-100 {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* Show print-only elements */
+  .print\:block {
+    display: block !important;
+  }
+
+  /* Fix terminal badge for print */
+  .bg-slate-900 {
+    background: #1e293b !important;
+  }
+}

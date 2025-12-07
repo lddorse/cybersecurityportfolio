@@ -31,6 +31,8 @@ import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
 import TicketProjectPage004 from './pages/Ticket004';
 import TicketPhishingMicrosoft from './pages/TicketPhishingMicrosoft';
+import ResumeSection from '../components/ResumeSection'; 
+import ResumePage from './pages/ResumePage';
 function App() {
   return (
     <Router>
@@ -43,6 +45,7 @@ function App() {
             <FixedCardLayout>
                 <Hero />
                 <Skills />
+                <ResumeSection />
                 {/* <WeatherCanvas /> */}
                 <PongGame /> 
               </FixedCardLayout>
@@ -68,6 +71,7 @@ function App() {
         <Route path="/project/ticket-mfa-challenge" element={<TicketProject />} />
         <Route path="/project/ticket-wifi-latency" element={<TicketProjectPage004/>} />
         <Route path="/project/ticket-phishing-microsoft" element={<TicketPhishingMicrosoft />} />   
+        <Route path="/resume" element={<ResumePage />} />
    </Routes>
     </Router>
   );
