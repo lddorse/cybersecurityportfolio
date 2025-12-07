@@ -24,29 +24,37 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import IncidentResponseProjects from './pages/IncidentResponseProjects';
 import TicketProject from './pages/TicketProject';
+import TicketProjectPage004 from './pages/Ticket004';
+import TicketPhishingMicrosoft from './pages/TicketPhishingMicrosoft';
+import ResumePage from './pages/ResumePage';
+import ResumeSection from './components/ResumeSection';
 import './custom.css';
 import FixedCardLayout from './components/FixedCardLayout';
 import PortfolioPage from './pages/PortfolioPage';
 import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
-import TicketProjectPage004 from './pages/Ticket004';
-import TicketPhishingMicrosoft from './pages/TicketPhishingMicrosoft';
-import ResumeSection from './components/ResumeSection'; 
-import ResumePage from './pages/ResumePage';
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="/" element={
+        {/* Homepage is now the Resume */}
+        <Route path="/" element={<ResumePage />} />
+        
+        {/* Old homepage moved to /interactive */}
+        <Route path="/interactive" element={
           <div className="relative h-screen bg-gray-200">
-            {/* Fixed A5 Card */}
             <FixedCardLayout>
-                <ResumePage />
+                <Hero />
+                <Skills />
+                {/* <WeatherCanvas /> */}
+                <PongGame /> 
               </FixedCardLayout>
           </div>
-        } />   
+        } />
+           
         <Route path="/projects/security-controls" element={<SecurityControlProjects />} />   
         <Route path="/projects/red-blue-labs" element={<RedBlueLabsProjects />} />  
         <Route path="/projects/phishing-awareness" element={<PhishingAwarenessProjects />} />
@@ -67,8 +75,7 @@ function App() {
         <Route path="/project/ticket-mfa-challenge" element={<TicketProject />} />
         <Route path="/project/ticket-wifi-latency" element={<TicketProjectPage004/>} />
         <Route path="/project/ticket-phishing-microsoft" element={<TicketPhishingMicrosoft />} />   
-        <Route path="/resume" element={<ResumePage />} />
-   </Routes>
+      </Routes>
     </Router>
   );
 }

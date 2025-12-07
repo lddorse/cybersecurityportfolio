@@ -21,11 +21,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
       <ul className="flex gap-6 text-gray-800 text-sm font-medium items-center">
-        <li>{navLink('/', 'Home')}</li>
+        <li>{navLink('/', 'Resume')}</li>
         <li>{navLink('/portfolio', 'Portfolio')}</li>
-        <li>{navLink('/resume', 'Resume')}</li>
         <li>{navLink('/about', 'About')}</li>
         <li>{navLink('/contact', 'Contact')}</li>
+        <li>{navLink('/interactive', 'Interactive')}</li>
         <li className="no-print">
           <button
             onClick={handlePrint}
