@@ -31,7 +31,7 @@ import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
 import TicketProjectPage004 from './pages/Ticket004';
 import TicketPhishingMicrosoft from './pages/TicketPhishingMicrosoft';
-import ResumeSection from '../components/ResumeSection'; 
+import ResumeSection from './components/ResumeSection'; 
 import ResumePage from './pages/ResumePage';
 function App() {
   return (
