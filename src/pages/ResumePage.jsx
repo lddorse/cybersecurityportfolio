@@ -13,7 +13,7 @@ const ResumePage = () => {
           📧 lddorse@gmail.com • 📱 (217) 530-1373 • 📍 Danville, Illinois
         </p>
         <p className="text-gray-600 text-sm mt-1">
-          🔗 leodorsey.com • 💼  • 💻 github.com/lddorse
+          🔗 leodorsey.com • 💻 github.com/lddorse
         </p>
       </div>
 

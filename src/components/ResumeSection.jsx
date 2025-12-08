@@ -65,8 +65,7 @@ const ResumeSection = () => {
           <h2 className="text-xl font-semibold mb-3 print:text-base print:mb-2">Certifications</h2>
           <div className="bg-gray-100 p-4 rounded-lg shadow print:p-2 print:shadow-none print:border print:border-gray-300">
             <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700 print:text-xs print:space-y-0.5">
-              <li>Google Cybersecurity Certificate (In Progress)</li>
-              <li>CompTIA Security+ (Planned 2025)</li>
+              <li>CompTIA Security+ </li>
             </ul>
           </div>
         </div>

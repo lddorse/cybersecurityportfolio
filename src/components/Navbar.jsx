@@ -25,16 +25,6 @@ const Navbar = () => {
         <li>{navLink('/portfolio', 'Portfolio')}</li>
         <li>{navLink('/about', 'About')}</li>
         <li>{navLink('/contact', 'Contact')}</li>
-        <li>{navLink('/interactive', 'Interactive')}</li>
-        <li className="no-print">
-          <button
-            onClick={handlePrint}
-            className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-xs"
-            title="Print/Save as PDF"
-          >
-            📄 PDF
-          </button>
-        </li>
       </ul>
     </nav>
   );
