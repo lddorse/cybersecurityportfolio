@@ -57,7 +57,7 @@ const ElosecPlatform = () => {
       {/* Screenshot - Landing Page */}
       <div className="mb-8">
         <img 
-          src="/mnt/user-data/uploads/Screenshot_2026-01-06_140659.png" 
+          src="/images/elosec/elosec-landing.png" 
           alt="Elo Sec Landing Page" 
           className="rounded-lg shadow-lg w-full"
         />
@@ -150,7 +150,7 @@ const ElosecPlatform = () => {
       <div className="mb-8">
         <h3 className="text-lg font-semibold mb-2">Threat Intelligence Example</h3>
         <img 
-          src="/mnt/user-data/uploads/Screenshot_2026-01-06_093438.png" 
+          src="/images/elosec/threat-intelligence.png" 
           alt="IP Threat Analysis" 
           className="rounded-lg shadow-lg w-full"
         />
@@ -218,7 +218,7 @@ const ElosecPlatform = () => {
             {/* Pi-hole Screenshot */}
             <div className="mb-4">
               <img 
-                src="/mnt/user-data/uploads/Screenshot_2026-01-06_140134.png" 
+                src="/images/elosec/pihole-dashboard.png" 
                 alt="Pi-hole Dashboard" 
                 className="rounded-lg shadow-lg w-full"
               />
@@ -267,7 +267,7 @@ const ElosecPlatform = () => {
             {/* WireGuard Screenshot */}
             <div className="mb-4">
               <img 
-                src="/mnt/user-data/uploads/Screenshot_2026-01-06_140448.png" 
+                src="/images/elosec/wireguard.png" 
                 alt="WireGuard Interface" 
                 className="rounded-lg shadow-lg w-full"
               />
@@ -374,7 +374,7 @@ const ElosecPlatform = () => {
             <div className="space-y-4 mb-4">
               <div>
                 <img 
-                  src="/mnt/user-data/uploads/Screenshot_2026-01-06_135608.png" 
+                  src="/images/elosec/grafana-system.png" 
                   alt="Grafana System Dashboard" 
                   className="rounded-lg shadow-lg w-full"
                 />
@@ -384,7 +384,7 @@ const ElosecPlatform = () => {
               </div>
               <div>
                 <img 
-                  src="/mnt/user-data/uploads/Screenshot_2026-01-06_135758.png" 
+                  src="/images/elosec/grafana-node-exporter.png" 
                   alt="Grafana Node Exporter" 
                   className="rounded-lg shadow-lg w-full"
                 />
@@ -430,7 +430,7 @@ const ElosecPlatform = () => {
             {/* Uptime Kuma Screenshot */}
             <div className="mb-4">
               <img 
-                src="/mnt/user-data/uploads/Screenshot_2026-01-06_140237.png" 
+                src="/images/elosec/uptime-kuma.png" 
                 alt="Uptime Kuma Dashboard" 
                 className="rounded-lg shadow-lg w-full"
               />
@@ -465,7 +465,7 @@ const ElosecPlatform = () => {
             {/* Portainer Screenshot */}
             <div className="mb-4">
               <img 
-                src="/mnt/user-data/uploads/Screenshot_2026-01-06_140410.png" 
+                src="/images/elosec/portainer.png" 
                 alt="Portainer Dashboard" 
                 className="rounded-lg shadow-lg w-full"
               />
