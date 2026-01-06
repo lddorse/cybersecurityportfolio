@@ -57,7 +57,7 @@ const ElosecPlatform = () => {
       {/* Screenshot - Landing Page */}
       <div className="mb-8">
         <img 
-          src="/images/elosec/elosec-landing.png" 
+          src="/images/elosec-landing.png" 
           alt="Elo Sec Landing Page" 
           className="rounded-lg shadow-lg w-full"
         />
@@ -150,7 +150,7 @@ const ElosecPlatform = () => {
       <div className="mb-8">
         <h3 className="text-lg font-semibold mb-2">Threat Intelligence Example</h3>
         <img 
-          src="/images/elosec/threat-intelligence.png" 
+          src="/images/threat-intelligence.png" 
           alt="IP Threat Analysis" 
           className="rounded-lg shadow-lg w-full"
         />
@@ -218,7 +218,7 @@ const ElosecPlatform = () => {
             {/* Pi-hole Screenshot */}
             <div className="mb-4">
               <img 
-                src="/images/elosec/pihole-dashboard.png" 
+                src="/images/pihole-dashboard.png" 
                 alt="Pi-hole Dashboard" 
                 className="rounded-lg shadow-lg w-full"
               />
@@ -267,7 +267,7 @@ const ElosecPlatform = () => {
             {/* WireGuard Screenshot */}
             <div className="mb-4">
               <img 
-                src="/images/elosec/wireguard.png" 
+                src="/images/wireguard.png" 
                 alt="WireGuard Interface" 
                 className="rounded-lg shadow-lg w-full"
               />
@@ -374,7 +374,7 @@ const ElosecPlatform = () => {
             <div className="space-y-4 mb-4">
               <div>
                 <img 
-                  src="/images/elosec/grafana-system.png" 
+                  src="/images/grafana-system.png" 
                   alt="Grafana System Dashboard" 
                   className="rounded-lg shadow-lg w-full"
                 />
@@ -430,7 +430,7 @@ const ElosecPlatform = () => {
             {/* Uptime Kuma Screenshot */}
             <div className="mb-4">
               <img 
-                src="/images/elosec/uptime-kuma.png" 
+                src="/images/uptime-kuma.png" 
                 alt="Uptime Kuma Dashboard" 
                 className="rounded-lg shadow-lg w-full"
               />
@@ -465,7 +465,7 @@ const ElosecPlatform = () => {
             {/* Portainer Screenshot */}
             <div className="mb-4">
               <img 
-                src="/images/elosec/portainer.png" 
+                src="/images/portainer.png" 
                 alt="Portainer Dashboard" 
                 className="rounded-lg shadow-lg w-full"
               />
