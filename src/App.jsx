@@ -28,6 +28,7 @@ import TicketProjectPage004 from './pages/Ticket004';
 import TicketPhishingMicrosoft from './pages/TicketPhishingMicrosoft';
 import ResumePage from './pages/ResumePage';
 import ResumeSection from './components/ResumeSection';
+import ElosecPlatform from './pages/ElosecPlatform';
 import './custom.css';
 import FixedCardLayout from './components/FixedCardLayout';
 import PortfolioPage from './pages/PortfolioPage';
@@ -61,6 +62,7 @@ function App() {
         <Route path="/projects/risk-policy" element={<RiskPolicyProjects />} />
         <Route path="/projects/vulnerability-assessments" element={<VulnAssessmentProjects />} />
         <Route path="/projects/incident-response" element={<IncidentResponseProjects />} />
+        <Route path="/projects/elosec-platform" element={<ElosecPlatform />} />
         <Route path="/project/mitre-detection" element={<MitreAttackProject />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
