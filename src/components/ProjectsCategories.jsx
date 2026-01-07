@@ -4,7 +4,7 @@ const ProjectCategories = () => {
   const categories = [
     {
       name: 'Web Development',
-      path: '/projects/web-development',
+      path: '/projects/sacred-prints',
       description: 'Full-stack applications, e-commerce platforms, and API integrations.'
     },
     {
