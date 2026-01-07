@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 const ProjectCategories = () => {
   const categories = [
     {
+      name: 'Web Development',
+      path: '/projects/web-development',
+      description: 'Full-stack applications, e-commerce platforms, and API integrations.'
+    },
+    {
       name: 'Vulnerability Assessments',
       path: '/projects/vulnerability-assessments',
       description: 'Scanning, enumeration, and internal assessments.'
