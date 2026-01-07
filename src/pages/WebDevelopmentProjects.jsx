@@ -11,7 +11,7 @@ const WebDevelopmentProjects = () => {
       <div className="mb-8">
         <h1 className="text-4xl font-bold mb-4">Web Development Projects</h1>
         <p className="text-gray-600 text-lg">
-          Full-stack web applications, e-commerce platforms, and API integrations
+          Full-stack web applications, e-commerce platforms, and API integrations.
         </p>
       </div>
 
