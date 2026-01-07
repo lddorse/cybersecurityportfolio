@@ -121,16 +121,26 @@ const ResumeSection = () => {
 
         {/* Sacred Prints */}
         <div className="bg-gray-100 p-4 rounded-lg shadow print:p-2 print:shadow-none print:border print:border-gray-300">
-          <h3 className="text-lg font-semibold mb-1 print:text-base">Sacred Prints</h3>
+          <div className="flex justify-between items-start mb-1">
+            <h3 className="text-lg font-semibold print:text-base">Sacred Prints</h3>
+            <Link 
+              to="/projects/sacred-prints"
+              className="text-sm bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition print:hidden"
+            >
+              View Details
+            </Link>
+          </div>
           <p className="text-sm text-gray-600 mb-2 print:mb-1">
             <a href="https://sacred-prints.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sacred-prints.com</a>
           </p>
-          <p className="text-sm text-gray-700 print:text-xs">
+          <p className="text-sm text-gray-700 mb-2 print:text-xs">
             Custom e-commerce platform built with HTML, Google Sheets integration, and Vercel deployment for small 
-            business retail operations. Demonstrates full-stack web development and API integration.
+            business retail operations.
+          </p>
+          <p className="text-xs text-gray-600 print:text-xs">
+            <strong>Stack:</strong> HTML/CSS/JS, Google Sheets API, Stripe, Vercel Serverless Functions
           </p>
         </div>
-      </div>
 
       {/* Creative & Technical Experience */}
       <h2 className="text-2xl font-bold mb-4 print:text-xl print:mb-2">Creative & Technical Experience</h2>
