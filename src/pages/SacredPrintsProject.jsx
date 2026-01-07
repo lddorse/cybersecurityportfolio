@@ -265,7 +265,7 @@ Redirect to success page with confirmation`}
               <li>Serverless deployment (Vercel)</li>
               <li>Zero monthly hosting costs</li>
               <li>Automatic HTTPS and CDN</li>
-              <li>Fast page load {'(<50KB initial)'}</li>
+              <li>Fast page load (&lt;50KB initial)</li>
               <li>Scalable architecture</li>
             </ul>
           </div>
