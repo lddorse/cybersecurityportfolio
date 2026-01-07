@@ -17,7 +17,7 @@ const WebDevelopmentProjects = () => {
           Faith-based e-commerce platform with Google Sheets CMS, Stripe payments, and serverless architecture.
         </p>
         <div className="flex gap-2">
-          
+          <a
             href="https://sacred-prints.com"
             target="_blank"
             rel="noopener noreferrer"
