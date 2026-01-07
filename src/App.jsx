@@ -34,6 +34,7 @@ import FixedCardLayout from './components/FixedCardLayout';
 import PortfolioPage from './pages/PortfolioPage';
 import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
+import SacredPrintsProject from './pages/SacredPrintsProject';
 
 function App() {
   return (
@@ -77,6 +78,7 @@ function App() {
         <Route path="/project/ticket-mfa-challenge" element={<TicketProject />} />
         <Route path="/project/ticket-wifi-latency" element={<TicketProjectPage004/>} />
         <Route path="/project/ticket-phishing-microsoft" element={<TicketPhishingMicrosoft />} />   
+        <Route path="/projects/sacred-prints" element={<SacredPrintsProject />} />
       </Routes>
     </Router>
   );
