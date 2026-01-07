@@ -19,7 +19,6 @@ const WebDevelopmentProjects = () => {
         "Vanilla JS (no framework)"
       ]
     }
-    // Add more web development projects here as you create them
   ];
 
   return (
