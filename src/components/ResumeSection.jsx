@@ -23,7 +23,7 @@ const ResumeSection = () => {
         <div className="bg-gray-100 p-4 rounded-lg shadow print:p-2 print:shadow-none print:border print:border-gray-300">
           <h3 className="text-lg font-semibold mb-1 print:text-base">Webmaster / Web Developer</h3>
           <p className="text-sm text-gray-600 mb-2 print:mb-1">
-            Presbyterian Church (USA) • May 2021 – 2024
+            Presbyterian Church (USA) • May 2021 – Aug 2025
           </p>
           <ul className="list-disc pl-5 space-y-0.5 text-sm text-gray-700 print:text-xs">
             <li>Maintained and developed features for national organization websites</li>
@@ -135,12 +135,13 @@ const ResumeSection = () => {
           </p>
           <p className="text-sm text-gray-700 mb-2 print:text-xs">
             Custom e-commerce platform built with HTML, Google Sheets integration, and Vercel deployment for small 
-            business retail operations.
+            business retail operations. Features Stripe payment processing and serverless architecture.
           </p>
           <p className="text-xs text-gray-600 print:text-xs">
             <strong>Stack:</strong> HTML/CSS/JS, Google Sheets API, Stripe, Vercel Serverless Functions
           </p>
         </div>
+      </div>
 
       {/* Creative & Technical Experience */}
       <h2 className="text-2xl font-bold mb-4 print:text-xl print:mb-2">Creative & Technical Experience</h2>
@@ -151,15 +152,15 @@ const ResumeSection = () => {
             Chicago & Bloomington, IL • 2014 – 2020
           </p>
           <ul className="list-disc pl-5 space-y-0.5 text-sm text-gray-700 print:text-xs">
-            <li>Provided live sound engineering for venues including Castle Theater, Logan Square Auditorium, and Thalia Hall</li>
+            <li>Provided live sound engineering and audio support for venues including Castle Theater, Logan Square Auditorium, and Thalia Hall</li>
             <li>Worked with production companies: Stitely Entertainment, Black Oak Technical (formerly Kehoe Design), Sound Investment, and Big Audio</li>
-            <li>Managed audio for high-profile events featuring artists including Keith Urban, CeeLo Green, and Elizabeth Koch</li>
+            <li>Worked for high-profile events featuring artists including Keith Urban, CeeLo Green, and Elizabeth Koch</li>
             <li>Recorded, mixed, and performed in live music environments</li>
           </ul>
         </div>
 
         <div className="bg-gray-100 p-4 rounded-lg shadow print:p-2 print:shadow-none print:border print:border-gray-300">
-          <h3 className="text-lg font-semibold mb-1 print:text-base">Art Gallery Manager</h3>
+          <h3 className="text-lg font-semibold mb-1 print:text-base">Art Gallery Associate</h3>
           <p className="text-sm text-gray-600 mb-2 print:mb-1">
             David Leonardis Gallery, Wicker Park, Chicago • 2014 – 2020
           </p>
@@ -176,7 +177,7 @@ const ResumeSection = () => {
           </p>
           <ul className="list-disc pl-5 space-y-0.5 text-sm text-gray-700 print:text-xs">
             <li>Fabricated custom stained glass windows for residential homes and churches</li>
-            <li>Completed restoration project on 100+ original windows from Frank Lloyd Wright-designed house</li>
+            <li>Completed restoration project on original windows from Frank Lloyd Wright-designed house</li>
           </ul>
         </div>
       </div>
