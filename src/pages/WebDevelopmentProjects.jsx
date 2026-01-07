@@ -43,16 +43,14 @@ const WebDevelopmentProjects = () => {
                   {project.title}
                 </h2>
                 <div className="flex gap-2">
-                  {project.externalLink && (
-                    
-                      href={project.externalLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-                    >
-                      Live Site
-                    </a>
-                  )}
+                  
+                    href={project.externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+                  >
+                    Live Site
+                  </a>
                   <Link
                     to={project.link}
                     className="text-sm bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
