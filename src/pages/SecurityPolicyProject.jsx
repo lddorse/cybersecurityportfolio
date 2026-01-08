@@ -54,7 +54,6 @@ const SecurityPolicyProject = () => {
         <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             <a
-            
               href="/images/LeoDorsey_SecurityPolicyDevelopment.pdf"
               target="_blank"
               rel="noopener noreferrer"
