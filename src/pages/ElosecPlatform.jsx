@@ -384,7 +384,7 @@ const ElosecPlatform = () => {
         </div>
         <div>
           <img 
-            src="/images/elosec/grafana-node-exporter.png" 
+            src="/images/grafana-node-exporter.png" 
             alt="Grafana Node Exporter" 
             className="rounded-lg shadow-lg w-full border border-gray-300 dark:border-gray-600"
           />
