@@ -56,8 +56,6 @@ const Navbar = () => {
         mx-1 sm:mx-0
       `}
       >
-
-      >
         <div className="
           bg-white/80 dark:bg-gray-800/80 backdrop-blur-md
           px-4 py-2 sm:px-6 sm:py-3 rounded-xl
