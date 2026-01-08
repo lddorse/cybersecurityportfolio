@@ -49,27 +49,28 @@ const Navbar = () => {
   return (
     <>
       <nav
-      className={`
-        fixed top-6 left-1/2 -translate-x-1/2 z-50
-        w-[calc(100vw-2rem)] sm:w-full sm:max-w-[768px]
-        transition-transform duration-300 ease-out
-        ${isVisible ? 'translate-y-0' : '-translate-y-24'}
-        mx-1 sm:mx-0
-      `}
+        className={`
+          fixed top-6 left-1/2 -translate-x-1/2 z-50
+          /* Match the content max-width and internal padding */
+          w-full max-w-[768px] px-4 sm:px-6
+          transition-transform duration-300 ease-out
+          ${isVisible ? 'translate-y-0' : '-translate-y-24'}
+        `}
       >
         <div className="
           bg-white/80 dark:bg-gray-800/80 backdrop-blur-md
           px-4 py-2 sm:px-6 sm:py-3 rounded-xl
           shadow-sm border border-gray-200 dark:border-gray-700
         ">
-          <ul className="flex items-center gap-6 text-[13px] font-medium tracking-wide flex-nowrap sm:flex-nowrap">
-            <li>{navLink('/', 'Resume')}</li>
-            <li>{navLink('/portfolio', 'Portfolio')}</li>
-            <li>{navLink('/about', 'About')}</li>
-            <li>{navLink('/contact', 'Contact')}</li>
+          {/* Use justify-between for even spacing */}
+          <ul className="flex items-center justify-between text-[13px] font-medium tracking-wide">
+            <li className="flex-1 text-center">{navLink('/', 'Resume')}</li>
+            <li className="flex-1 text-center">{navLink('/portfolio', 'Portfolio')}</li>
+            <li className="flex-1 text-center">{navLink('/about', 'About')}</li>
+            <li className="flex-1 text-center">{navLink('/contact', 'Contact')}</li>
 
-            <li className="h-4 w-px bg-gray-200 dark:bg-gray-700 mx-1" />
-
+            {/* Separator and Toggle */}
+            <li className="h-4 w-px bg-gray-200 dark:bg-gray-700 mx-2" />
             <li>
               <DarkModeToggle />
             </li>
