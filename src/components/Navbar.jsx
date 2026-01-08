@@ -52,7 +52,7 @@ const Navbar = () => {
       <nav
         className={`
           fixed top-6 left-1/2 -translate-x-1/2 z-50
-          w-[calc(100vw-2rem)] max-w-max
+          w-[calc(100vw-2rem)] sm:w-full sm:max-w-5xl
           transition-transform duration-300 ease-out
           ${isVisible ? 'translate-y-0' : '-translate-y-24'}
         `}
