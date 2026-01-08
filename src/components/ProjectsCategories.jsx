@@ -16,26 +16,13 @@ const WebDevelopmentProjects = () => {
       </div>
 
       <div className="space-y-6">
-        
         <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
               <h2 className="text-2xl font-bold text-gray-800">Sacred Prints Gallery</h2>
               <div className="flex gap-2">
-                
-                  href="https://sacred-prints.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-                >
-                  Live Site
-                </a>
-                <Link
-                  to="/projects/sacred-prints"
-                  className="text-sm bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                >
-                  View Details
-                </Link>
+                <a href="https://sacred-prints.com" target="_blank" rel="noopener noreferrer" className="text-sm bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Live Site</a>
+                <Link to="/projects/sacred-prints" className="text-sm bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Details</Link>
               </div>
             </div>
 
@@ -61,7 +48,6 @@ const WebDevelopmentProjects = () => {
             </div>
           </div>
         </div>
-
       </div>
     </FixedCardLayout>
   );
