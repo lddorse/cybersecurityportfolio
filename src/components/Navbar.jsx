@@ -47,8 +47,6 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      {/* Main Navbar */}
       <nav
       className={`
         fixed top-6 left-1/2 -translate-x-1/2 z-50
