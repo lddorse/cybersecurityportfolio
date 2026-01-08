@@ -25,8 +25,7 @@ const Hero = () => {
           </h2>
 
           <p className="text-gray-700 mb-4 max-w-md">
-            I specialize in proactive cybersecurity strategies, risk assessment, 
-            phishing training, and security control implementation.
+            I design and implement security solutions including self-hosted infrastructure monitoring, automated compliance tools, and web applications. Skilled in threat analysis, security hardening, and bridging technical security with practical business needs.
           </p>
         </div>
 
