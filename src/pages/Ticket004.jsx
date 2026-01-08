@@ -45,107 +45,107 @@ export default function TicketProjectPage004() {
         <BackButton />
 
         <header className="mb-6">
-          <h1 className="text-3xl font-bold mb-4">{ticket.title}</h1>
+          <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100">{ticket.title}</h1>
           <div className="flex flex-wrap gap-3 items-center mb-2">
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 border border-yellow-200 dark:border-yellow-700">
               {ticket.priority} Priority
             </span>
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-100 text-green-800">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 border border-green-200 dark:border-green-700">
               {ticket.status}
             </span>
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600">
               {ticket.category}
             </span>
           </div>
-          <p className="text-sm text-gray-600">{ticket.id} • Reported by {ticket.reporter} • {ticket.created}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">{ticket.id} • Reported by {ticket.reporter} • {ticket.created}</p>
         </header>
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-2 space-y-6">
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Summary</h2>
-              <p className="text-gray-700">{ticket.summary}</p>
+            <article className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
+              <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Summary</h2>
+              <p className="text-gray-700 dark:text-gray-300">{ticket.summary}</p>
             </article>
 
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Investigation & Triage Steps</h2>
-              <ol className="list-decimal pl-6 space-y-2 text-gray-700">
+            <article className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
+              <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Investigation & Triage Steps</h2>
+              <ol className="list-decimal pl-6 space-y-2 text-gray-700 dark:text-gray-300">
                 {ticket.checks.map((c, i) => (
                   <li key={i}>{c}</li>
                 ))}
               </ol>
             </article>
 
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Timeline</h2>
+            <article className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
+              <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Timeline</h2>
               <div className="space-y-3">
                 {ticket.timeline.map((t, i) => (
-                  <div key={i} className="flex items-start border-l-2 border-blue-500 pl-4">
-                    <span className="w-20 flex-shrink-0 text-sm font-medium text-gray-600">{t.time}</span>
+                  <div key={i} className="flex items-start border-l-2 border-blue-500 dark:border-blue-600 pl-4">
+                    <span className="w-20 flex-shrink-0 text-sm font-medium text-gray-600 dark:text-gray-400">{t.time}</span>
                     <div>
-                      <div className="font-semibold text-gray-800">{t.actor}</div>
-                      <div className="text-gray-700">{t.note}</div>
+                      <div className="font-semibold text-gray-800 dark:text-gray-200">{t.actor}</div>
+                      <div className="text-gray-700 dark:text-gray-300">{t.note}</div>
                     </div>
                   </div>
                 ))}
               </div>
             </article>
 
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Evidence & Attachments</h2>
-              <ul className="list-disc pl-6 space-y-2">
+            <article className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
+              <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Evidence & Attachments</h2>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
                 {ticket.attachments.map((a, i) => (
                   <li key={i}>
                     <span className="font-medium">{a.name}</span>
-                    <span className="text-sm text-gray-600"> ({a.type}, {a.size})</span>
+                    <span className="text-sm text-gray-600 dark:text-gray-400"> ({a.type}, {a.size})</span>
                   </li>
                 ))}
               </ul>
             </article>
 
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Resolution & Next Steps</h2>
-              <div className="text-gray-700">{ticket.resolution}</div>
+            <article className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
+              <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Resolution & Next Steps</h2>
+              <div className="text-gray-700 dark:text-gray-300">{ticket.resolution}</div>
             </article>
           </div>
 
           <aside className="space-y-6">
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Status</h2>
+            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
+              <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Status</h2>
               <div className="mb-4">
-                <span className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800">
+                <span className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 border border-green-200 dark:border-green-700">
                   {ticket.status}
                 </span>
               </div>
               <div>
-                <h3 className="text-sm font-semibold text-gray-600 mb-1">Assigned To</h3>
-                <div className="text-gray-700">{ticket.reporter}</div>
+                <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-1">Assigned To</h3>
+                <div className="text-gray-700 dark:text-gray-300">{ticket.reporter}</div>
               </div>
             </div>
 
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Lessons Learned</h2>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
+              <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Lessons Learned</h2>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
                 {ticket.lessons.map((l, i) => (
                   <li key={i}>{l}</li>
                 ))}
               </ul>
             </div>
 
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Skills Demonstrated</h2>
+            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
+              <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Skills Demonstrated</h2>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-800">WiFi Diagnostics</span>
-                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-800">Network Troubleshooting</span>
-                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-800">Root Cause Analysis</span>
-                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-800">Documentation</span>
+                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-700">WiFi Diagnostics</span>
+                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-700">Network Troubleshooting</span>
+                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-700">Root Cause Analysis</span>
+                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-700">Documentation</span>
               </div>
             </div>
           </aside>
         </section>
 
-        <footer className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded">
-          <p className="text-sm text-gray-700">
+        <footer className="mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded">
+          <p className="text-sm text-gray-700 dark:text-gray-300">
             <strong>Portfolio Note:</strong> This simulated network troubleshooting ticket demonstrates analysis of AP load, channel overlap, and wireless performance tuning. Real environments would use enterprise dashboards such as UniFi, Meraki, or Cisco Prime for validation.
           </p>
         </footer>
