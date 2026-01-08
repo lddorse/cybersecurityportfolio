@@ -50,12 +50,15 @@ const Navbar = () => {
     <>
       {/* Main Navbar */}
       <nav
-        className={`
-          fixed top-6 left-1/2 -translate-x-1/2 z-50
-          w-[calc(100vw-2rem)] sm:w-full sm:max-w-5xl
-          transition-transform duration-300 ease-out
-          ${isVisible ? 'translate-y-0' : '-translate-y-24'}
-        `}
+      className={`
+        fixed top-6 left-1/2 -translate-x-1/2 z-50
+        w-[calc(100vw-2rem)] sm:w-full sm:max-w-[768px]
+        transition-transform duration-300 ease-out
+        ${isVisible ? 'translate-y-0' : '-translate-y-24'}
+        mx-1 sm:mx-0
+      `}
+      >
+
       >
         <div className="
           bg-white/80 dark:bg-gray-800/80 backdrop-blur-md
