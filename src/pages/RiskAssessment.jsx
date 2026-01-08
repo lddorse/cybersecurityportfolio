@@ -61,19 +61,19 @@ const RiskAssessmentProject = () => {
 
       <section className="mb-8 bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
         <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Resources</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-          <li>
-            
+          <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>
+              <a
               href="/images/LeoDorsey_RiskAssessmentAndInfoGathering.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
-            >
+              >
               Download Report (PDF)
-            </a>
-          </li>
-        </ul>
-      </section>
+              </a>
+              </li>
+            </ul>
+        </section>
     </FixedCardLayout>
   );
 };
