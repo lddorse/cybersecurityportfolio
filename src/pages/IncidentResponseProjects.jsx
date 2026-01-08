@@ -17,55 +17,67 @@ const IncidentResponseProjects = () => {
       skills: ['Network Troubleshooting', 'WiFi Analysis', 'Latency Diagnostics', 'Helpdesk Support']
     },
     {
-      title: 'Possible Phishing Email — “Verify Your Microsoft Account”',
+      title: 'Possible Phishing Email — "Verify Your Microsoft Account"',
       description: 'Analyzed a suspicious email claiming Microsoft account verification. Performed header inspection, link analysis, and provided user education & remediation steps.',
       path: '/project/ticket-phishing-microsoft',
       skills: ['Phishing Analysis', 'Email Security', 'User Awareness', 'Threat Hunting']
     }
-
   ];
 
   return (
     <FixedCardLayout> 
-      <div className="max-w-6xl mx-auto">
-        <BackButton />
-        
-        <h1 className="text-3xl font-bold mb-4">Helpdesk & Incident Response</h1>
-        <p className="mb-8">
+      <BackButton />
+      
+      <div className="mb-8">
+        <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+          Helpdesk & Incident Response
+        </h1>
+        <p className="text-gray-600 dark:text-gray-400 text-lg">
           Real-world ticket simulations demonstrating triage, investigation, and incident handling skills.
         </p>
+      </div>
 
-        <div className="grid gap-6 md:grid-cols-2 mb-8">
-          {projects.map((project, index) => (
-            <div key={index} className="bg-gray-100 rounded-lg p-6 shadow">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-700 mb-4">{project.description}</p>
-              
-              <div className="mb-4">
-                <div className="flex flex-wrap gap-2">
-                  {project.skills.map((skill, i) => (
-                    <span key={i} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
+      <div className="grid gap-6 md:grid-cols-2 mb-8">
+        {projects.map((project, index) => (
+          <div key={index} className="bg-gray-100 dark:bg-gray-700 rounded-lg p-6 shadow border border-gray-200 dark:border-gray-600">
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
+              {project.title}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              {project.description}
+            </p>
+            
+            <div className="mb-4">
+              <div className="flex flex-wrap gap-2">
+                {project.skills.map((skill, i) => (
+                  <span 
+                    key={i} 
+                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-sm rounded-full border border-blue-200 dark:border-blue-700"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
-
-              <Link
-                to={project.path}
-                className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-              >
-                View Ticket
-              </Link>
             </div>
-          ))}
-        </div>
+            
+            <Link
+              to={project.path}
+              className="inline-block bg-blue-600 dark:bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition"
+            >
+              View Ticket
+            </Link>
+          </div>
+        ))}
+      </div>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">About This Section</h2>
-        <p>
+      <div>
+        <h2 className="text-xl font-semibold mt-6 mb-2 text-gray-900 dark:text-gray-100">
+          About This Section
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300">
           These projects simulate real helpdesk and SOC tickets, demonstrating my ability to:
         </p>
-        <ul className="list-disc pl-6 mt-3">
+        <ul className="list-disc pl-6 mt-3 text-gray-700 dark:text-gray-300">
           <li>Triage and prioritize security incidents</li>
           <li>Perform systematic investigation and root cause analysis</li>
           <li>Document findings and maintain clear communication</li>
