@@ -52,16 +52,17 @@ const Navbar = () => {
       <nav
         className={`
           fixed top-6 left-1/2 -translate-x-1/2 z-50
+          w-[calc(100vw-2rem)] max-w-max
           transition-transform duration-300 ease-out
           ${isVisible ? 'translate-y-0' : '-translate-y-24'}
         `}
       >
         <div className="
           bg-white/80 dark:bg-gray-800/80 backdrop-blur-md
-          px-6 py-3 rounded-xl
+          px-4 py-2 sm:px-6 sm:py-3 rounded-xl
           shadow-sm border border-gray-200 dark:border-gray-700
         ">
-          <ul className="flex items-center gap-6 text-[13px] font-medium tracking-wide">
+          <ul className="flex items-center gap-6 text-[13px] font-medium tracking-wide flex-nowrap sm:flex-nowrap">
             <li>{navLink('/', 'Resume')}</li>
             <li>{navLink('/portfolio', 'Portfolio')}</li>
             <li>{navLink('/about', 'About')}</li>
