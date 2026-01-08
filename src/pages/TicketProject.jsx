@@ -1,163 +1,91 @@
-import React from "react";
-import FixedCardLayout from "../components/FixedCardLayout";
+import { Link } from 'react-router-dom';
 import BackButton from '../components/BackButton';
+import FixedCardLayout from '../components/FixedCardLayout';
 
-export default function TicketProjectPage() {
-  const ticket = {
-    id: "#001",
-    title: "Unrecognized MFA Challenge at 3am",
-    priority: "Medium",
-    category: "Security Incident",
-    reporter: "Leo Dorsey",
-    created: "2 days ago",
-    summary:
-      "User reports receiving an unexpected MFA code request overnight. Unsure if login attempt was legitimate. No known scheduled tasks. Possible credential compromise.",
-    status: "Investigating",
-    timeline: [
-      { time: "03:12 AM", actor: "System", note: "MFA request sent to user" },
-      { time: "03:15 AM", actor: "User", note: "User received code and reported via helpdesk" },
-      { time: "10:02 AM", actor: "Leo Dorsey", note: "Ticket created in Spiceworks" }
-    ],
-    checks: [
-      "Verify MFA logs for originating IP and device",
-      "Check login attempt history and conditional access policies",
-      "Scan for concurrent suspicious activity (email, mailbox rules)",
-      "Reset credentials if evidence of compromise found",
-      "Lock sessions and force re-authentication"
-    ],
-    resolution: null,
-    attachments: [
-      { name: "auth-logs-sample.txt", type: "log", size: "12KB" },
-      { name: "screenshot-mfa-notification.png", type: "image", size: "86KB" }
-    ],
-    lessons: [
-      "Consider rate-limiting MFA requests for suspicious geographic origins",
-      "Add user education about unexpected MFA prompts and reporting steps",
-      "Tune conditional access policies to challenge unusual locations/devices"
-    ]
-  };
+const IncidentResponseProjects = () => {
+  const projects = [
+    {
+      title: 'MFA Challenge Investigation',
+      description: 'Investigated suspicious MFA request at 3am. Performed log analysis, verified authentication attempts, and documented incident response procedures.',
+      path: '/project/ticket-mfa-challenge',
+      skills: ['Incident Response', 'Log Analysis', 'MFA Security', 'Documentation']
+    },
+    {
+      title: 'Slow WiFi / High Latency – East Wing',
+      description: 'Diagnosed intermittent wireless performance issues affecting users during peak hours. Analyzed AP load, checked channel interference, and recommended configuration adjustments.',
+      path: '/project/ticket-wifi-latency',
+      skills: ['Network Troubleshooting', 'WiFi Analysis', 'Latency Diagnostics', 'Helpdesk Support']
+    },
+    {
+      title: 'Possible Phishing Email — "Verify Your Microsoft Account"',
+      description: 'Analyzed a suspicious email claiming Microsoft account verification. Performed header inspection, link analysis, and provided user education & remediation steps.',
+      path: '/project/ticket-phishing-microsoft',
+      skills: ['Phishing Analysis', 'Email Security', 'User Awareness', 'Threat Hunting']
+    }
+  ];
 
   return (
-    <FixedCardLayout>
-      <div className="max-w-4xl mx-auto">
-        <BackButton />
-        
-        <header className="mb-6">
-          <h1 className="text-3xl font-bold mb-4">{ticket.title}</h1>
-          <div className="flex flex-wrap gap-3 items-center mb-2">
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
-              {ticket.priority} Priority
-            </span>
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-indigo-100 text-indigo-800">
-              {ticket.status}
-            </span>
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700">
-              {ticket.category}
-            </span>
-          </div>
-          <p className="text-sm text-gray-600">{ticket.id} • Reported by {ticket.reporter} • {ticket.created}</p>
-        </header>
+    <FixedCardLayout> 
+      <BackButton />
+      
+      <div className="mb-8">
+        <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+          Helpdesk & Incident Response
+        </h1>
+        <p className="text-gray-600 dark:text-gray-400 text-lg">
+          Real-world ticket simulations demonstrating triage, investigation, and incident handling skills.
+        </p>
+      </div>
 
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:col-span-2 space-y-6">
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Summary</h2>
-              <p className="text-gray-700">{ticket.summary}</p>
-            </article>
-
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Investigation & Triage Steps</h2>
-              <ol className="list-decimal pl-6 space-y-2 text-gray-700">
-                {ticket.checks.map((c, i) => (
-                  <li key={i}>{c}</li>
-                ))}
-              </ol>
-            </article>
-
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Timeline</h2>
-              <div className="space-y-3">
-                {ticket.timeline.map((t, i) => (
-                  <div key={i} className="flex items-start border-l-2 border-blue-500 pl-4">
-                    <span className="w-20 flex-shrink-0 text-sm font-medium text-gray-600">{t.time}</span>
-                    <div>
-                      <div className="font-semibold text-gray-800">{t.actor}</div>
-                      <div className="text-gray-700">{t.note}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </article>
-
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Evidence & Attachments</h2>
-              <ul className="list-disc pl-6 space-y-2">
-                {ticket.attachments.map((a, i) => (
-                  <li key={i}>
-                    <span className="font-medium">{a.name}</span>
-                    <span className="text-sm text-gray-600"> ({a.type}, {a.size})</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-
-            <article>
-              <h2 className="text-xl font-semibold mb-2">Resolution & Next Steps</h2>
-              <div className="text-gray-700">
-                {ticket.resolution ? (
-                  <p>{ticket.resolution}</p>
-                ) : (
-                  <p className="italic text-gray-600">
-                    No resolution recorded yet. Working through investigative checks listed above.
-                  </p>
-                )}
-              </div>
-            </article>
-          </div>
-
-          <aside className="space-y-6">
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Status</h2>
-              <div className="mb-4">
-                <span className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-100 text-indigo-800">
-                  {ticket.status}
-                </span>
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold text-gray-600 mb-1">Assigned To</h3>
-                <div className="text-gray-700">{ticket.reporter}</div>
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Lessons Learned</h2>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                {ticket.lessons.map((l, i) => (
-                  <li key={i}>{l}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Skills Demonstrated</h2>
+      <div className="grid gap-6 md:grid-cols-2 mb-8">
+        {projects.map((project, index) => (
+          <div key={index} className="bg-gray-100 dark:bg-gray-700 rounded-lg p-6 shadow border border-gray-200 dark:border-gray-600">
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
+              {project.title}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              {project.description}
+            </p>
+            
+            <div className="mb-4">
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-800">Incident Response</span>
-                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-800">Log Analysis</span>
-                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-800">MFA Security</span>
-                <span className="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-800">Documentation</span>
+                {project.skills.map((skill, i) => (
+                  <span 
+                    key={i} 
+                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-sm rounded-full border border-blue-200 dark:border-blue-700"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </div>
-          </aside>
-        </section>
+            
+            <Link
+              to={project.path}
+              className="inline-block bg-blue-600 dark:bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition"
+            >
+              View Ticket
+            </Link>
+          </div>
+        ))}
+      </div>
 
-        <footer className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded">
-          <p className="text-sm text-gray-700">
-            <strong>Portfolio Note:</strong> This is a simulated helpdesk ticket demonstrating systematic 
-            incident response procedures. In a real environment, actual log files and authentication data 
-            would be attached and analyzed using SIEM tools like Splunk or Microsoft Sentinel.
-          </p>
-        </footer>
+      <div>
+        <h2 className="text-xl font-semibold mt-6 mb-2 text-gray-900 dark:text-gray-100">
+          About This Section
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300">
+          These projects simulate real helpdesk and SOC tickets, demonstrating my ability to:
+        </p>
+        <ul className="list-disc pl-6 mt-3 text-gray-700 dark:text-gray-300">
+          <li>Triage and prioritize security incidents</li>
+          <li>Perform systematic investigation and root cause analysis</li>
+          <li>Document findings and maintain clear communication</li>
+          <li>Identify lessons learned and recommend preventive measures</li>
+        </ul>
       </div>
     </FixedCardLayout>
   );
-}
+};
+
+export default IncidentResponseProjects;
