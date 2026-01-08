@@ -1,4 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
+import DarkModeToggle from './DarkModeToggle';
+
 
 const Navbar = () => {
   const location = useLocation();
@@ -26,6 +28,7 @@ const Navbar = () => {
         <li>{navLink('/about', 'About')}</li>
         <li>{navLink('/contact', 'Contact')}</li>
       </ul>
+      <DarkModeToggle />
     </nav>
   );
 };
