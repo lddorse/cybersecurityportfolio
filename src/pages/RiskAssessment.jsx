@@ -63,7 +63,7 @@ const RiskAssessmentProject = () => {
         <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Resources</h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
               <li>
-              <a
+              
               href="/images/LeoDorsey_RiskAssessmentAndInfoGathering.pdf"
               target="_blank"
               rel="noopener noreferrer"
