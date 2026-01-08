@@ -70,20 +70,7 @@ const IncidentResponseProjects = () => {
         ))}
       </div>
 
-      <div>
-        <h2 className="text-xl font-semibold mt-6 mb-2 text-gray-900 dark:text-gray-100">
-          About This Section
-        </h2>
-        <p className="text-gray-700 dark:text-gray-300">
-          These projects simulate real helpdesk and SOC tickets, demonstrating my ability to:
-        </p>
-        <ul className="list-disc pl-6 mt-3 text-gray-700 dark:text-gray-300">
-          <li>Triage and prioritize security incidents</li>
-          <li>Perform systematic investigation and root cause analysis</li>
-          <li>Document findings and maintain clear communication</li>
-          <li>Identify lessons learned and recommend preventive measures</li>
-        </ul>
-      </div>
+
     </FixedCardLayout>
   );
 };
