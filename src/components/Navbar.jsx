@@ -75,7 +75,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-
+)
       {/* Hamburger Button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
