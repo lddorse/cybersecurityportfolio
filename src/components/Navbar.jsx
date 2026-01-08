@@ -47,6 +47,7 @@ const Navbar = () => {
   };
 
   return (
+    <>
       <nav
       className={`
         fixed top-6 left-1/2 -translate-x-1/2 z-50
@@ -75,7 +76,6 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-)
       {/* Hamburger Button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
