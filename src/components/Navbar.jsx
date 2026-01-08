@@ -11,11 +11,9 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      // Show navbar when scrolling up or at the top
       if (currentScrollY < lastScrollY || currentScrollY < 10) {
         setIsVisible(true);
       } 
-      // Hide navbar when scrolling down (but only after 100px)
       else if (currentScrollY > 100 && currentScrollY > lastScrollY) {
         setIsVisible(false);
       }
@@ -30,9 +28,13 @@ const Navbar = () => {
   const navLink = (to, label) => (
     <Link
       to={to}
-      className={`${
-        location.pathname === to ? 'red-underline' : ''
-      } hover:text-gray-600 dark:hover:text-gray-300 transition`}
+      className={`
+        transition-colors
+        ${location.pathname === to 
+          ? 'text-blue-600 dark:text-blue-400 font-semibold' 
+          : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+        }
+      `}
     >
       {label}
     </Link>
@@ -46,18 +48,14 @@ const Navbar = () => {
         ${isVisible ? 'translate-y-0' : '-translate-y-24'}
       `}
     >
-      <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-gray-200 dark:border-gray-700">
-        <ul className="flex gap-6 text-gray-800 dark:text-gray-200 text-sm font-medium items-center">
+      <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-md px-8 py-4 rounded-full shadow-lg border border-gray-200 dark:border-gray-700">
+        <ul className="flex gap-8 text-sm font-medium items-center">
           <li>{navLink('/', 'Resume')}</li>
           <li>{navLink('/portfolio', 'Portfolio')}</li>
           <li>{navLink('/about', 'About')}</li>
           <li>{navLink('/contact', 'Contact')}</li>
-          
-          {/* Divider */}
-          <li className="h-6 w-px bg-gray-300 dark:bg-gray-600"></li>
-          
-          {/* Dark Mode Toggle */}
-          <li>
+          <li className="h-5 w-px bg-gray-300 dark:bg-gray-600 ml-2"></li>
+          <li className="ml-2">
             <DarkModeToggle />
           </li>
         </ul>
