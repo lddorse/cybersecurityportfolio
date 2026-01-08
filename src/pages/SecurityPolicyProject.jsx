@@ -40,11 +40,7 @@ const SecurityPolicyProject = () => {
       <section className="mb-8 bg-white dark:bg-gray-700 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-600">
         <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Screenshots</h2>
         <div>
-          <img 
-            src="/images/Acceptable_Use_Policy_Screenshot.png" 
-            alt="Acceptable Use Policy" 
-            className="rounded-lg shadow-lg w-full border border-gray-300 dark:border-gray-600"
-          />
+          <img src="/images/Acceptable_Use_Policy_Screenshot.png" alt="Acceptable Use Policy" className="rounded-lg shadow-lg w-full border border-gray-300 dark:border-gray-600" />
           <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">Acceptable Use Policy</p>
         </div>
       </section>
@@ -53,14 +49,7 @@ const SecurityPolicyProject = () => {
         <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Resources</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
           <li>
-            <a
-              href="/images/LeoDorsey_SecurityPolicyDevelopment.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
-            >
-              Download Report (PDF)
-            </a>
+            <a href="/images/LeoDorsey_SecurityPolicyDevelopment.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Download Report (PDF)</a>
           </li>
         </ul>
       </section>
