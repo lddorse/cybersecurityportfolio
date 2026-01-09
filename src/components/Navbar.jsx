@@ -39,8 +39,8 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Main Nav: Scrolls with page */}
-      <nav className="w-full max-w-[768px] mx-auto px-4 sm:px-6 pt-6">
+      {/* Main Nav: Scrolls with page - removed background, tighter spacing */}
+      <nav className="w-full max-w-[768px] mx-auto px-4 sm:px-6 pt-4 pb-4">
         <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md px-4 py-2 sm:px-6 sm:py-3 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
           <ul className="flex items-center justify-between text-[13px] font-medium tracking-wide">
             <li className="flex-1 text-center">{navLink('/', 'Resume')}</li>
