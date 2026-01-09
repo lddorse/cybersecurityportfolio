@@ -1,6 +1,6 @@
 const FixedCardLayout = ({ children }) => {
   return (
-    <div className="min-h-screen w-full bg-gray-200 dark:bg-gray-900 pt-24 pb-12">
+    <div className="min-h-screen w-full bg-gray-200 dark:bg-gray-900 pt-4 pb-12">
       {/* Content Container */}
       <div className="max-w-[768px] mx-auto px-4 sm:px-6">
         <div className="bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-300 dark:border-gray-700 p-6">
