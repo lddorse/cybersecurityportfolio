@@ -3,107 +3,180 @@ import { Link } from 'react-router-dom';
 const ProjectCategories = () => {
   const categories = [
     {
-      name: 'Web Development',
-      path: '/projects/web-development',
-      description: 'Full-stack applications, e-commerce platforms, and API integrations.'
+      title: 'Vulnerability Assessment',
+      description: 'Security scanning, analysis, and remediation projects',
+      icon: '🔍',
+      link: '/projects/vuln-assessment',
+      color: 'blue'
     },
     {
-      name: 'Vulnerability Assessments',
-      path: '/projects/vulnerability-assessments',
-      description: 'Scanning, enumeration, and internal assessments.'
+      title: 'Incident Response',
+      description: 'Helpdesk tickets and security incident handling',
+      icon: '🚨',
+      link: '/projects/incident-response',
+      color: 'red'
     },
     {
-      name: 'Risk & Policy Management',
-      path: '/projects/risk-policy',
-      description: 'Risk analysis, security policies, and frameworks.'
+      title: 'Risk Assessment',
+      description: 'Risk analysis and information gathering',
+      icon: '⚖️',
+      link: '/projects/risk-assessment',
+      color: 'yellow'
     },
     {
-      name: 'Phishing & User Awareness',
-      path: '/projects/phishing-awareness',
-      description: 'Phishing simulation, user training, and awareness.'
+      title: 'Security Policy',
+      description: 'Policy development and enforcement',
+      icon: '📋',
+      link: '/projects/security-policy',
+      color: 'green'
     },
     {
-      name: 'Red Team / Blue Team Labs',
-      path: '/projects/red-blue-labs',
-      description: 'Simulated offensive and defensive exercises.'
+      title: 'Phishing & User Awareness',
+      description: 'Phishing simulations and training',
+      icon: '🎣',
+      link: '/projects/phishing',
+      color: 'purple'
     },
     {
-      name: 'Security Control Engineering',
-      path: '/projects/security-controls',
-      description: 'Implementation and hardening of systems and networks.'
+      title: 'Red Team / Blue Team',
+      description: 'Offensive and defensive security exercises',
+      icon: '⚔️',
+      link: '/projects/red-blue',
+      color: 'orange'
     },
     {
-      name: 'Helpdesk & Incident Response',
-      path: '/projects/incident-response',
-      description: 'Ticket triage, investigation, and incident handling.'
+      title: 'MITRE ATT&CK',
+      description: 'Threat mapping and detection validation',
+      icon: '🎯',
+      link: '/projects/mitre-attack',
+      color: 'indigo'
+    },
+    {
+      title: 'Security Controls',
+      description: 'Implementation of technical and administrative controls',
+      icon: '🔒',
+      link: '/projects/security-controls',
+      color: 'teal'
+    },
+    {
+      title: 'Issue Resolution',
+      description: 'Root cause analysis and problem solving',
+      icon: '🔧',
+      link: '/projects/issue-resolution',
+      color: 'gray'
+    },
+    {
+      title: 'Web Development',
+      description: 'Full-stack web applications and projects',
+      icon: '🌐',
+      link: '/projects/web-development',
+      color: 'pink'
     }
   ];
 
   return (
-    <section className="px-4 py-6">
-      {/* Featured Project */}
-      <div className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">
-          Featured Project
-        </h2>
-        <div className="max-w-4xl mx-auto bg-blue-50 dark:bg-blue-900/20 shadow-lg rounded-lg p-8 border-2 border-blue-200 dark:border-blue-700">
-          <h3 className="text-2xl font-bold text-blue-900 dark:text-blue-300 mb-3">
-            Elo Sec Platform
-          </h3>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
-            Self-hosted network security & infrastructure monitoring platform running on Raspberry Pi 4. 
-            Blocks 1,500+ weekly intrusion attempts using Pi-hole, WireGuard VPN, Grafana monitoring, and automated threat detection.
-          </p>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            <strong>Stack:</strong> Pi-hole • WireGuard • Grafana • Docker • Nginx
-          </p>
-          <div className="flex gap-3 mb-4">
-            <a 
-              href="https://elosec.tech" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-sm bg-blue-600 dark:bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition"
-            >
-              Live Site
-            </a>
-            <a 
-              href="https://status.leodorsey.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-sm bg-green-600 dark:bg-green-700 text-white px-4 py-2 rounded hover:bg-green-700 dark:hover:bg-green-600 transition"
-            >
-              Status
-            </a>
-          </div>
-          <Link 
-            to="/projects/elosec-platform" 
-            className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
+    <div className="space-y-8">
+      {/* Featured Projects Section */}
+      <div>
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">Featured Projects</h2>
+        
+        <div className="space-y-6">
+          {/* Elosec Platform - Primary Featured */}
+          <Link
+            to="/projects/elosec"
+            className="block bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-lg border-2 border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-lg hover:shadow-xl"
           >
-            View Full Project Details →
+            <div className="flex items-start">
+              <span className="text-4xl mr-4">🛡️</span>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold mb-2 text-blue-700 dark:text-blue-400">
+                  Elo Sec Platform
+                </h3>
+                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  Self-hosted network security and infrastructure monitoring system running on Raspberry Pi. 
+                  Features DNS filtering (Pi-hole), VPN (WireGuard), intrusion prevention (fail2ban), real-time 
+                  monitoring (Grafana), and containerized services. Actively blocks 1,500+ malicious connection 
+                  attempts weekly.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-full border border-blue-200 dark:border-blue-700">
+                    Network Security
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-full border border-blue-200 dark:border-blue-700">
+                    Infrastructure Monitoring
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-full border border-blue-200 dark:border-blue-700">
+                    Docker
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-full border border-blue-200 dark:border-blue-700">
+                    Self-Hosted
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* CIS Compliance Checker - Secondary Featured */}
+          <Link
+            to="/project/cis-compliance"
+            className="block bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-lg border-2 border-green-200 dark:border-green-700 hover:border-green-400 dark:hover:border-green-500 transition-all shadow-lg hover:shadow-xl"
+          >
+            <div className="flex items-start">
+              <span className="text-4xl mr-4">✅</span>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold mb-2 text-green-700 dark:text-green-400">
+                  CIS Benchmark Compliance Checker
+                </h3>
+                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  Custom Python tool for automated security compliance assessment against CIS benchmarks. 
+                  Scans SSH configuration, password policies, filesystem security, and services. Generates 
+                  professional HTML reports with remediation guidance. Improved system compliance from 63.6% to 100%.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs rounded-full border border-green-200 dark:border-green-700">
+                    Security Automation
+                  </span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs rounded-full border border-green-200 dark:border-green-700">
+                    CIS Benchmarks
+                  </span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs rounded-full border border-green-200 dark:border-green-700">
+                    Python
+                  </span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs rounded-full border border-green-200 dark:border-green-700">
+                    System Hardening
+                  </span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs rounded-full border border-green-200 dark:border-green-700">
+                    100% Compliance
+                  </span>
+                </div>
+              </div>
+            </div>
           </Link>
         </div>
       </div>
 
-      <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">
-        Project Categories
-      </h2>
-      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
-        {categories.map((cat, index) => (
-          <Link
-            to={cat.path}
-            key={index}
-            className="block bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 border border-gray-200 dark:border-gray-600 hover:shadow-xl transition"
-          >
-            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
-              {cat.name}
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              {cat.description}
-            </p>
-          </Link>
-        ))}
+      {/* Project Categories */}
+      <div>
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">All Projects by Category</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {categories.map((category, index) => (
+            <Link
+              key={index}
+              to={category.link}
+              className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-xl transition-all border border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500"
+            >
+              <div className="text-4xl mb-3">{category.icon}</div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                {category.title}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                {category.description}
+              </p>
+            </Link>
+          ))}
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
