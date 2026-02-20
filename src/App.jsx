@@ -65,7 +65,7 @@ function App() {
         <Route path="/projects/risk-policy" element={<RiskPolicyProjects />} />
         <Route path="/projects/vulnerability-assessments" element={<VulnAssessmentProjects />} />
         <Route path="/projects/incident-response" element={<IncidentResponseProjects />} />
-        <Route path="/projects/elosec" element={<ElosecPlatform />} />
+        <Route path="/project/elosec" element={<ElosecPlatform />} />
         <Route path="/project/mitre-detection" element={<MitreAttackProject />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
