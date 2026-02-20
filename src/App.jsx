@@ -36,6 +36,7 @@ import PongGame from './pages/PongGame';
 import WeatherCanvas from './pages/WeatherCanvas';
 import SacredPrintsProject from './pages/SacredPrintsProject';
 import WebDevelopmentProjects from './pages/WebDevelopmentProjects';
+import CISComplianceProject from './pages/CISComplianceProject';
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         <Route path="/project/ticket-phishing-microsoft" element={<TicketPhishingMicrosoft />} />   
         <Route path="/projects/sacred-prints" element={<SacredPrintsProject />} />
         <Route path="/projects/web-development" element={<WebDevelopmentProjects />} /> 
+        <Route path="/project/cis-compliance" element={<CISComplianceProject />} />
       </Routes>
     </Router>
   );
