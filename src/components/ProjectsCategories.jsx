@@ -83,7 +83,7 @@ const ProjectCategories = () => {
         <div className="space-y-6">
           {/* Elosec Platform - Primary Featured */}
           <Link
-            to="/pages/elosec"
+            to="/project/elosec"
             className="block bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-lg border-2 border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-lg hover:shadow-xl"
           >
             <div className="flex items-start">
